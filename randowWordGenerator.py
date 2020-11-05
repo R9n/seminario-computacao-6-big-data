@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# Desenvolvimento Aberto
 # shell.py
  
 # Importar modulo do sistema operacional
@@ -11,7 +10,6 @@ import time
 
 import socket
  
-# Usa o comando do shell ls
 
 #Apaga a tela
 os.system("clear")
@@ -41,16 +39,12 @@ texts =  [
 "Duis et mattis purus. Vivamus sapien augue, condimentum eget tellus eget, varius aliquet lorem. Maecenas purus magna, rutrum sit amet neque ac, pulvinar dapibus mi. Sed quis tincidunt dolor, vel hendrerit mauris. Vivamus varius varius neque, commodo euismod felis placerat vel. Quisque nec hendrerit arcu. Ut non fermentum nisi, a lobortis erat. Fusce tortor justo, facilisis sit amet sagittis vitae, pellentesque id purus. Mauris commodo efficitur turpis ac dignissim. Donec urna diam, fermentum eu lacinia id, interdum ac neque. "
 ]
 
+
 #configurações de host e porta
 netCatPort = 1027
 netCatHost = "localhost"
 timeInterval= 1.5
 
-
-
-
-
-      # Port to listen on (non-privileged ports are > 1023)
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 	s.bind((netCatHost, netCatPort))
